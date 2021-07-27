@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Sans+JP:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 5% 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Dancing Script',
+    cursive;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0 0 5% 0;
+}
+
+#book-form {
+    width: 500px;
+
+    .group {
+        padding: 3% 0;
+
+        input {
+            width: 100%;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid grey;
+            padding: 10px 0;
+            background-color: transparent;
+            text-transform: capitalize;
+        }
+
+        label {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 700;
+        }
+    } 
+
+    button {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        padding: 2% 0;
+        background-color: red;
+        color: white;
+        margin: 5% 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+    }
+}
+
+table {
+    width: 100%;
+    padding: 5% 0;
+    border-collapse: collapse;
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        font-family: 'Noto Sans JP',
+        sans-serif;
+        text-transform: capitalize;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+}
+
+#book-list tr .delete-btn {
+    width: 20px;
+    cursor: pointer;
+}
+
+.alert-danger {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: red;
+    color: white;
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-size: 15px;
+}
+
+.alert-success {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: green;
+    color: white;
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 769px) {
+    body {
+        width: 100%;
+        padding: 5%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    #book-form {
+        width: 100%;
+        padding: 5%;
+    }
+
+    table {
+        padding: 5%;
+    }
+
+}

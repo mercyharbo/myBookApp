@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mercy Book List </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1> Mercy Book List </h1>
+
+    <div class="container">
+        <form id="book-form">
+            <div class="group">
+                <label for="title"> Title </label>
+                <input type="text" id="title">
+            </div>
+            <div class="group">
+                <label for="author"> Author </label>
+                <input type="text" id="author">
+            </div>
+            <div class="group">
+                <label for="isbn"> ISBN# </label>
+                <input type="text" id="isbn">
+            </div>
+            <button type="submit" value="Add Book" class="submit"> Add Book </button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
