@@ -118,10 +118,5 @@ table tr:nth-child(even) {
 
   #book-form {
     width: 100%;
-    padding: 5%;
-  }
-
-  table {
-    padding: 5%;
   }
 }
